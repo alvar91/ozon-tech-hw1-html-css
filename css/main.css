@@ -412,7 +412,7 @@ ul {
 
 .card__list {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 17px;
   padding: 0;
 }
 
@@ -426,29 +426,42 @@ ul {
   display: flex;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 1440px) {
   .card__list {
     flex-direction: column;
   }
 }
 
+.card__list-item {
+  height: 52px;
+  padding: 0 24px;
+  border-right: 1px solid var(--border-light);
+}
+
+@media (max-width: 1440px) {
+  .card__list-item {
+    padding: 0;
+    height: auto;
+    border: none;
+  }
+}
+
+.card__list-item:first-child {
+  padding: 0;
+}
+
+.card__list-item:last-child {
+  border: none;
+}
+
 .card__sub-list {
   display: flex;
-  padding: 0 24px;
+  padding: 0;
   min-width: 269px;
-  border-right: 1px solid var(--border-light);
 }
 
 .card__sub-list:first-child {
   min-width: 207px;
-}
-
-.card__sub-list:first-child {
-  padding-left: 0;
-}
-
-.card__sub-list:last-child {
-  border: none;
 }
 
 .card__item {
@@ -459,7 +472,6 @@ ul {
 @media (max-width: 1040px) {
   .card__sub-list {
     height: 100%;
-    justify-content: space-between;
   }
 
   .card__item {
@@ -528,6 +540,14 @@ ul {
   margin-right: 0;
 }
 
+@media (max-width: 1440px) {
+  .card__label:nth-child(3),
+  .card__label:nth-child(6),
+  .card__label:last-child {
+    margin-right: 22px;
+  }
+}
+
 .card__label--wide {
   width: 100%;
 }
@@ -562,6 +582,14 @@ ul {
   margin-right: 0;
 }
 
+@media (max-width: 1440px) {
+  .card__field:nth-child(3),
+  .card__field:nth-child(6),
+  .card__field:last-child {
+    margin-right: 22px;
+  }
+}
+
 .card__date {
   display: flex;
   flex-direction: column;
@@ -591,6 +619,12 @@ ul {
   transition: outline 0.1s ease;
 }
 
+@media (max-width: 1440px) {
+  .card__input {
+    width: 100%;
+  }
+}
+
 @media (max-width: 730px) {
   .card__input {
     width: 288px;
@@ -614,6 +648,12 @@ ul {
   padding-top: 11px;
 }
 
+@media (max-width: 730px) {
+  .card__input--wide {
+    width: 288px;
+  }
+}
+
 /* select */
 .select {
   position: relative;
@@ -625,6 +665,12 @@ ul {
   cursor: pointer;
   background-color: var(--main-grey);
   z-index: 999;
+}
+
+@media (max-width: 1440px) {
+  .select {
+    width: 100%;
+  }
 }
 
 @media (max-width: 730px) {
