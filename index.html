@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анкеты HR</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__group">
+          <a href="#" class="header__logo" aria-label="Логотип сайта">
+            <img src="images/logo.svg" alt="Логотип сайта" />
+          </a>
+          <button class="header__logout">Выйти</button>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Все</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Ожидают загрузки</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Загружены кандидатом</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container main-container">
+      <h1 class="visually-hidden">Анкеты HR</h1>
+      <aside class="aside">
+        <form action="#" class="aside__form">
+          <fieldset class="aside__fieldset">
+            <button
+              class="aside__search"
+              type="submit"
+              aria-label="Поиск по сайту"
+            ></button>
+            <input
+              class="aside__input"
+              type="search"
+              name="search"
+              placeholder="Поиск"
+            />
+          </fieldset>
+
+          <button
+            class="aside__filter"
+            type="button"
+            aria-label="Фильтр поиска"
+          ></button>
+        </form>
+        <ul class="aside__list">
+          <li class="aside__item">
+            <a href="#" class="aside__user-link">
+              Константиновский Константин Констинович
+            </a>
+            <div class="aside__status">
+              <button class="aside__user-status aside__user-status--warning">
+                Ожидают загрузки
+              </button>
+              <time class="aside__user-date" datetime="2022-02-12"
+                >12.02.2022</time
+              >
+            </div>
+          </li>
+
+          <li class="aside__item">
+            <a href="#" class="aside__user-link">
+              Свиридова Анна Анатольевна
+            </a>
+            <div class="aside__status">
+              <button class="aside__user-status aside__user-status--warning">
+                Ожидают загрузки
+              </button>
+              <time class="aside__user-date" datetime="2022-02-12"
+                >12.02.2022</time
+              >
+            </div>
+          </li>
+
+          <li class="aside__item">
+            <a href="#" class="aside__user-link">
+              Константиновский Константин Игоревич
+            </a>
+            <div class="aside__status">
+              <button class="aside__user-status aside__user-status--success">
+                Загружена кандидатом
+              </button>
+              <time class="aside__user-date" datetime="2022-02-12"
+                >12.02.2022</time
+              >
+            </div>
+          </li>
+
+          <li class="aside__item">
+            <a href="#" class="aside__user-link">
+              Александровский Антон Дмитриевич
+            </a>
+            <div class="aside__status">
+              <button class="aside__user-status aside__user-status--success">
+                Загружена кандидатом
+              </button>
+              <time class="aside__user-date" datetime="2022-02-12"
+                >12.02.2022</time
+              >
+            </div>
+          </li>
+
+          <li class="aside__item">
+            <a href="#" class="aside__user-link">
+              Константиновский Константин Олегович
+            </a>
+            <div class="aside__status">
+              <button class="aside__user-status aside__user-status--success">
+                Загружена кандидатом
+              </button>
+              <time class="aside__user-date" datetime="2022-02-12"
+                >12.02.2022</time
+              >
+            </div>
+          </li>
+
+          <li class="aside__item">
+            <a href="#" class="aside__user-link">
+              Темошевская Александра Ивановна
+            </a>
+            <div class="aside__status">
+              <button class="aside__user-status aside__user-status--success">
+                Загружена кандидатом
+              </button>
+              <time class="aside__user-date" datetime="2022-02-12"
+                >12.02.2022</time
+              >
+            </div>
+          </li>
+
+          <li class="aside__item">
+            <a href="#" class="aside__user-link">
+              Степаненко Галина Федоровна
+            </a>
+            <div class="aside__status">
+              <button class="aside__user-status aside__user-status--warning">
+                Ожидают загрузки
+              </button>
+              <time class="aside__user-date" datetime="2022-02-12"
+                >12.02.2022</time
+              >
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <section class="card">
+          <article class="card__about">
+            <h2 class="card__name">Константиновский Константин Игоревич</h2>
+            <button class="card__user-status card__user-status--success">
+              Загружена кандидатом
+            </button>
+          </article>
+          <article class="card__data">
+            <ul class="card__list">
+              <li>
+                <ul class="card__sub-list">
+                  <li class="card__item">
+                    <span class="card__label">Заявка:</span>
+                    <span class="card__label">Логин:</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__label">HR-48160</span>
+                    <span class="card__label">kkonstantinovski</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="card__sub-list">
+                  <li class="card__item">
+                    <span class="card__label">Дата выхода:</span>
+                    <span class="card__label">Дата оформления:</span>
+                  </li>
+                  <li class="card__item">
+                    <time class="card__date" datetime="2021-08-18"
+                      >18.08.2021</time
+                    >
+                    <time class="card__date" datetime="2021-08-18"
+                      >18.08.2021</time
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="card__sub-list">
+                  <li class="card__item">
+                    <span class="card__label">Статус ФП:</span>
+                    <span class="card__label">Статус УЗ:</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__status card__status--updated"
+                      >Обновлено</span
+                    >
+                    <span class="card__status card__status--active"
+                      >Активна</span
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+          <article class="card__detailed">
+            <h3 class="card__personal">Личная информация</h3>
+            <form action="#" class="card__form">
+              <label class="card__field">
+                <span class="card__title">Фамилия</span>
+
+                <input
+                  type="text"
+                  class="card__input"
+                  placeholder="Константиновский"
+                />
+              </label>
+              <label class="card__field">
+                <span class="card__title">Имя</span>
+
+                <input
+                  type="text"
+                  class="card__input"
+                  placeholder="Константин"
+                />
+              </label>
+              <label class="card__field">
+                <span class="card__title">Отчество</span>
+
+                <input type="text" class="card__input" placeholder="Игоревич" />
+              </label>
+
+              <label class="card__field">
+                <span class="card__title">Дата рождения</span>
+
+                <input
+                  type="date"
+                  class="card__input card__input--date"
+                  value="1998-02-09"
+                  min="1900-01-01"
+                />
+              </label>
+              <div class="card__field">
+                <span class="card__title">Гражданство</span>
+                <ul class="select" tabindex="0">
+                  <li>
+                    <input
+                      class="select__close"
+                      type="radio"
+                      name="awesomeness"
+                      id="awesomeness-close"
+                      value=""
+                    />
+                    <label class="select__label select__label-placeholder"
+                      >Российская Федерация</label
+                    >
+                  </li>
+
+                  <li class="select__items">
+                    <input
+                      class="select__expand"
+                      type="radio"
+                      name="awesomeness"
+                      id="awesomeness-opener"
+                    />
+                    <label
+                      class="select__closelabel"
+                      for="awesomeness-close"
+                    ></label>
+
+                    <ul class="select__options">
+                      <li class="select__option">
+                        <input
+                          class="select__input"
+                          type="radio"
+                          name="awesomeness"
+                          id="awesomeness-rf"
+                        />
+                        <label class="select__label" for="awesomeness-rf"
+                          >Российская Федерация</label
+                        >
+                      </li>
+
+                      <li class="select__option">
+                        <input
+                          class="select__input"
+                          type="radio"
+                          name="awesomeness"
+                          id="awesomeness-uk"
+                        />
+                        <label class="select__label" for="awesomeness-uk"
+                          >Украина</label
+                        >
+                      </li>
+
+                      <li class="select__option">
+                        <input
+                          class="select__input"
+                          type="radio"
+                          name="awesomeness"
+                          id="awesomeness-bl"
+                        />
+                        <label class="select__label" for="awesomeness-bl"
+                          >Беларусь</label
+                        >
+                      </li>
+
+                      <li class="select__option">
+                        <input
+                          class="select__input"
+                          type="radio"
+                          name="awesomeness"
+                          id="awesomeness-kz"
+                        />
+                        <label class="select__label" for="awesomeness-kz"
+                          >Казахстан</label
+                        >
+                      </li>
+                    </ul>
+
+                    <label
+                      class="select__expandlabel"
+                      for="awesomeness-opener"
+                    ></label>
+                  </li>
+                </ul>
+              </div>
+              <span class="card__field">
+                <span class="card__title">Пол</span>
+
+                <span class="card__label-container">
+                  <label tabindex="0" class="card__radio"
+                    >Женский
+                    <input
+                      class="card__input-radio"
+                      type="radio"
+                      name="radio"
+                    />
+                    <span class="card__checkmark"></span>
+                  </label>
+                  <label tabindex="0" class="card__radio"
+                    >Мужской
+                    <input
+                      class="card__input-radio"
+                      type="radio"
+                      checked="checked"
+                      name="radio"
+                    />
+                    <span class="card__checkmark"></span>
+                  </label>
+                </span>
+              </span>
+              <label class="card__label card__label--wide">
+                <span class="card__title">Город проживания</span>
+
+                <input
+                  type="text"
+                  class="card__input card__input--wide"
+                  placeholder="Санкт-Петербург"
+                />
+              </label>
+            </form>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
