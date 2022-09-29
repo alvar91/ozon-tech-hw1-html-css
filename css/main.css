@@ -271,7 +271,7 @@ ul {
 }
 
 .aside__item:hover {
-  background-color: var(--hover-bg);
+  background-color: var(--main-grey);
   transition: background-color 0.3s ease-in-out;
 }
 
