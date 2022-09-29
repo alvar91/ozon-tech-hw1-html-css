@@ -15,6 +15,9 @@
   --success-bg: #e8f4ec;
   --hover-bg: #f8f4f4;
   --radio-border: rgba(97, 131, 162, 0.26);
+
+  --text-disabled: #abb1b6;
+  --input-disabled: #868e96;
 }
 
 /* fonts */
@@ -552,6 +555,10 @@ ul {
   width: 100%;
 }
 
+.card__label--disabled {
+  color: var(--text-disabled);
+}
+
 .card__label-container {
   display: flex;
 }
@@ -617,6 +624,10 @@ ul {
   line-height: 16px;
   color: var(--text-color);
   transition: outline 0.1s ease;
+}
+
+.card__input:disabled {
+  color: var(--input-disabled);
 }
 
 @media (max-width: 1440px) {
