@@ -624,6 +624,7 @@ ul {
   line-height: 16px;
   color: var(--text-color);
   transition: outline 0.1s ease;
+  appearance: none;
 }
 
 .card__input:disabled {
@@ -652,7 +653,6 @@ ul {
   height: 24px;
   background: url("../images/calendar-input.svg") var(--main-grey);
   pointer-events: none;
-  appearance: none;
 }
 
 .card__input--wide {
