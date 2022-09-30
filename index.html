@@ -273,88 +273,12 @@
               </label>
               <div class="card__field">
                 <span class="card__title">Гражданство</span>
-                <ul class="select" tabindex="0">
-                  <li>
-                    <input
-                      class="select__close"
-                      type="radio"
-                      name="awesomeness"
-                      id="awesomeness-close"
-                      value=""
-                    />
-                    <label class="select__label select__label-placeholder"
-                      >Российская Федерация</label
-                    >
-                  </li>
-
-                  <li class="select__items">
-                    <input
-                      class="select__expand"
-                      type="radio"
-                      name="awesomeness"
-                      id="awesomeness-opener"
-                    />
-                    <label
-                      class="select__closelabel"
-                      for="awesomeness-close"
-                    ></label>
-
-                    <ul class="select__options">
-                      <li class="select__option">
-                        <input
-                          class="select__input"
-                          type="radio"
-                          name="awesomeness"
-                          id="awesomeness-rf"
-                        />
-                        <label class="select__label" for="awesomeness-rf"
-                          >Российская Федерация</label
-                        >
-                      </li>
-
-                      <li class="select__option">
-                        <input
-                          class="select__input"
-                          type="radio"
-                          name="awesomeness"
-                          id="awesomeness-uk"
-                        />
-                        <label class="select__label" for="awesomeness-uk"
-                          >Украина</label
-                        >
-                      </li>
-
-                      <li class="select__option">
-                        <input
-                          class="select__input"
-                          type="radio"
-                          name="awesomeness"
-                          id="awesomeness-bl"
-                        />
-                        <label class="select__label" for="awesomeness-bl"
-                          >Беларусь</label
-                        >
-                      </li>
-
-                      <li class="select__option">
-                        <input
-                          class="select__input"
-                          type="radio"
-                          name="awesomeness"
-                          id="awesomeness-kz"
-                        />
-                        <label class="select__label" for="awesomeness-kz"
-                          >Казахстан</label
-                        >
-                      </li>
-                    </ul>
-
-                    <label
-                      class="select__expandlabel"
-                      for="awesomeness-opener"
-                    ></label>
-                  </li>
-                </ul>
+                <select class="card__select card__select--arrow" name="citizenship">
+                  <option value="rf" selected>Российская Федерация</option>
+                  <option value="uk">Украина</option>
+                  <option value="bl">Беларусь</option>
+                  <option value="kz">Казахстан</option>
+                </select>
               </div>
               <span class="card__field">
                 <span class="card__title">Пол</span>

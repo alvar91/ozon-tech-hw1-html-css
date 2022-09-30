@@ -577,7 +577,7 @@ ul {
 .card__field {
   display: flex;
   flex-direction: column;
-  margin-right: 22px;
+  margin-right: 21px;
   margin-bottom: 19px;
   font-size: 15px;
   color: var(--text-light-grey);
@@ -652,6 +652,7 @@ ul {
   height: 24px;
   background: url("../images/calendar-input.svg") var(--main-grey);
   pointer-events: none;
+  appearance: none;
 }
 
 .card__input--wide {
@@ -666,16 +667,28 @@ ul {
 }
 
 /* select */
-.select {
+.card__select {
   position: relative;
-  margin: 0;
-  padding: 0;
-  width: 308px;
-  height: 44px;
+  width: 309px;
+  padding: 14px 14px;
+  border: none;
   border-radius: 8px;
-  cursor: pointer;
-  background-color: var(--main-grey);
-  z-index: 999;
+  background: var(--main-grey);
+  font-size: 15px;
+  line-height: 16px;
+  color: var(--text-color);
+  transition: outline 0.1s ease;
+  appearance: none;
+}
+
+.card__select--arrow {
+  background: url("../images/arrow.svg") right 13px center no-repeat var(--main-grey);
+  transition: background 0.3s ease;
+}
+
+.card__select--arrow:focus {
+  background: url("../images/arrow-down.svg") right 13px center no-repeat var(--main-grey);
+  transition: background 0.3s ease;
 }
 
 @media (max-width: 1440px) {
@@ -688,129 +701,6 @@ ul {
   .select {
     width: 288px;
   }
-}
-
-.select__expand {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  outline: none;
-}
-
-.select__expand::after {
-  content: "";
-  position: absolute;
-  top: 9px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  background: url("../images/arrow.svg");
-  pointer-events: none;
-  transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
-}
-
-.select__expand:hover::after {
-  opacity: 1;
-}
-
-.select__expand:checked::after {
-  transform: rotate(180deg);
-}
-
-.select__expandlabel {
-  display: block;
-  width: 100%;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
-
-.select__close {
-  display: none;
-}
-
-.select__closelabel {
-  top: 0;
-  left: 0;
-  display: none;
-}
-
-.select__items {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 8px;
-  padding-top: 42px;
-}
-
-.select__input {
-  display: none;
-}
-
-.select__label {
-  display: block;
-  height: 0;
-  padding-left: 14px;
-  font-size: 15px;
-  line-height: 40px;
-  overflow: hidden;
-  color: var(--text-color);
-  background-color: var(--main-grey);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0.25, 0.3, 1);
-}
-
-.select__label-placeholder {
-  height: 40px;
-  vertical-align: middle;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-}
-
-.select__expand:checked + .select_closelabel {
-  display: block;
-}
-
-.select__options {
-  padding: 0;
-}
-
-.select__label {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.select__expand:checked
-  + .select__closelabel
-  + .select__options
-  .select__label {
-  height: 40px;
-}
-
-.select__expand:checked
-  + .select__closelabel
-  + .select__options
-  .select__label:hover {
-  background-color: var(--warning-bg);
-}
-
-.select__expand:checked
-  + .select__closelabel
-  + .select__options
-  + .select__expandlabel {
-  display: none;
-}
-
-.select__input:checked + .select__label {
-  height: 40px;
-  margin-top: -40px;
 }
 
 /* radio */
