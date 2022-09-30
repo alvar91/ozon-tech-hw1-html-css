@@ -692,13 +692,13 @@ ul {
 }
 
 @media (max-width: 1440px) {
-  .select {
+  .card__select {
     width: 100%;
   }
 }
 
 @media (max-width: 730px) {
-  .select {
+  .card__select {
     width: 288px;
   }
 }
