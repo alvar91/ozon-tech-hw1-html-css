@@ -2,8 +2,9 @@
 
 /* variables */
 :root {
+  /* colors */
   --main-light: #fff;
-  --main-background: #f5f5f5;
+  --main-background: #f9fafb;
   --text-color: rgba(0, 17, 34, 0.95);
   --text-grey: rgba(0, 17, 34, 0.66);
   --text-light-grey: #57626d;
@@ -15,9 +16,33 @@
   --success-bg: #e8f4ec;
   --hover-bg: #f8f4f4;
   --radio-border: rgba(97, 131, 162, 0.26);
+  --header-border: #e6ebf0;
 
   --text-disabled: #abb1b6;
   --input-disabled: #868e96;
+
+  /* gaps */
+  --main-mb: 53px;
+  --main-mr: 20px;
+  --main-p: 24px;
+  --main-vertical: 12px;
+  --main-horizontal: 16px;
+
+  --header-mb: 16px;
+  --header-mr: 31px;
+
+  --input-mr: 21px;
+  --input-mb: 19px;
+
+  --sub-input-mr: 11px;
+  --sub-input-mb: 8px;
+  --title-mb: 5px;
+
+  /* font sizes */
+  --main-fz: 15px;
+
+  /* border-radius */
+  --border-radius-b: 16px;
 }
 
 /* fonts */
@@ -42,6 +67,7 @@
 /* general */
 html {
   box-sizing: border-box;
+  background-color: var(--main-background);
 }
 
 *,
@@ -60,11 +86,10 @@ body {
   padding: 0;
   min-width: 320px;
   font-family: "Inter", "Arial", sans-serif;
-  background-color: var(--main-background);
   color: var(--text-color);
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: var(--main-fz);
   line-height: 24px;
 }
 
@@ -112,15 +137,16 @@ ul {
 
 /* header */
 .header {
-  padding-top: 12px;
-  margin-bottom: 16px;
+  padding-top: var(--main-vertical);
+  margin-bottom: var(--header-mb);
+  border-bottom: 2px solid var(--header-border);
   background-color: var(--main-light);
 }
 
 .header__group {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: var(--main-vertical);
 }
 
 .header__logout {
@@ -144,8 +170,7 @@ ul {
 
 .main {
   width: 100%;
-  border-radius: 8px;
-  background-color: var(--main-light);
+  margin-bottom: var(--main-mb);
 }
 
 /* nav */
@@ -163,13 +188,13 @@ ul {
 
 .nav__item {
   display: flex;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   align-items: center;
   min-height: 37px;
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 31px;
+  margin-right: var(--header-mr);
 }
 
 .nav__link {
@@ -200,7 +225,8 @@ ul {
 /* aside */
 .aside {
   width: 334px;
-  margin-right: 20px;
+  margin-right: var(--main-mr);
+  margin-bottom: var(--main-mb);
 }
 
 .aside__form {
@@ -208,7 +234,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--border-dark);
-  padding: 16px;
+  padding: var(--main-horizontal);
   border-radius: 8px 8px 0 0;
   background-color: var(--main-light);
 }
@@ -267,7 +293,7 @@ ul {
 }
 
 .aside__item {
-  padding: 12px 16px;
+  padding: var(--main-vertical) var(--main-horizontal);
   border-bottom: 1px solid var(--border-dark);
   background-color: var(--main-light);
   transition: background-color 0.3s ease-in-out;
@@ -304,7 +330,7 @@ ul {
   padding: 2px 12px 2px 18px;
   line-height: 20px;
   border: none;
-  border-radius: 16px;
+  border-radius: var(--border-radius-b);
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -358,14 +384,19 @@ ul {
 }
 
 /* card */
+.card {
+  border-radius: 8px;
+  background-color: var(--main-light);
+}
+
 .card__about {
-  padding: 24px;
+  padding: var(--main-p);
   padding-bottom: 0;
 }
 
 .card__name {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: var(--sub-input-mb);
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -377,7 +408,7 @@ ul {
   padding: 2px 12px 2px 22px;
   line-height: 20px;
   border: none;
-  border-radius: 16px;
+  border-radius: var(--border-radius-b);
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
@@ -420,7 +451,7 @@ ul {
 }
 
 .card__data {
-  padding: 24px;
+  padding: var(--main-p);
   padding-bottom: 0;
   border-bottom: 1px solid var(--border-dark);
 }
@@ -437,7 +468,7 @@ ul {
 
 .card__list-item {
   height: 52px;
-  padding: 0 24px;
+  padding: 0 var(--main-p);
   border-right: 1px solid var(--border-light);
 }
 
@@ -484,7 +515,7 @@ ul {
 
 .card__status {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: var(--sub-input-mb);
   padding-left: 15px;
   font-size: 13px;
   font-weight: 600;
@@ -513,8 +544,9 @@ ul {
 }
 
 .card__detailed {
-  padding: 24px;
+  padding: var(--main-p);
   padding-top: 18px;
+  padding-bottom: 2px;
 }
 
 .card__form {
@@ -531,9 +563,9 @@ ul {
 .card__label {
   display: flex;
   flex-direction: column;
-  margin-right: 11px;
-  margin-bottom: 8px;
-  font-size: 15px;
+  margin-right: var(--sub-input-mr);
+  margin-bottom: var(--sub-input-mb);
+  font-size: var(--main-fz);
   color: var(--text-light-grey);
 }
 
@@ -547,7 +579,7 @@ ul {
   .card__label:nth-child(3),
   .card__label:nth-child(6),
   .card__label:last-child {
-    margin-right: 22px;
+    margin-right: var(--input-mr);
   }
 }
 
@@ -570,16 +602,16 @@ ul {
 }
 
 .card__title {
-  margin-bottom: 5px;
+  margin-bottom: var(--title-mb);
   font-size: 13px;
 }
 
 .card__field {
   display: flex;
   flex-direction: column;
-  margin-right: 21px;
-  margin-bottom: 19px;
-  font-size: 15px;
+  margin-right: var(--input-mr);
+  margin-bottom: var(--input-mb);
+  font-size: var(--main-fz);
   color: var(--text-light-grey);
 }
 
@@ -593,22 +625,22 @@ ul {
   .card__field:nth-child(3),
   .card__field:nth-child(6),
   .card__field:last-child {
-    margin-right: 22px;
+    margin-right: var(--input-mr);
   }
 }
 
 .card__date {
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: var(--sub-input-mb);
   padding-left: 7px;
-  font-size: 15px;
+  font-size: var(--main-fz);
   color: var(--text-light-grey);
 }
 
 .card__personal {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: var(--input-mr);
   font-size: 20px;
   letter-spacing: -0.3px;
 }
@@ -616,11 +648,11 @@ ul {
 .card__input {
   position: relative;
   width: 309px;
-  padding: 14px 14px;
+  padding: 14px;
   border: none;
   border-radius: 8px;
   background: var(--main-grey);
-  font-size: 15px;
+  font-size: var(--main-fz);
   line-height: 16px;
   color: var(--text-color);
   transition: outline 0.1s ease;
@@ -643,6 +675,10 @@ ul {
   }
 }
 
+.card__input--date {
+  padding: 12.5px 14px;
+}
+
 .card__input--date::after {
   content: "";
   position: absolute;
@@ -657,7 +693,7 @@ ul {
 
 .card__input--wide {
   width: 100%;
-  padding-top: 11px;
+  padding-top: 14px;
 }
 
 @media (max-width: 730px) {
@@ -674,7 +710,7 @@ ul {
   border: none;
   border-radius: 8px;
   background: var(--main-grey);
-  font-size: 15px;
+  font-size: var(--main-fz);
   line-height: 16px;
   color: var(--text-color);
   transition: outline 0.1s ease;
@@ -682,12 +718,14 @@ ul {
 }
 
 .card__select--arrow {
-  background: url("../images/arrow.svg") right 13px center no-repeat var(--main-grey);
+  background: url("../images/arrow.svg") right 13px center no-repeat
+    var(--main-grey);
   transition: background 0.3s ease;
 }
 
 .card__select--arrow:focus {
-  background: url("../images/arrow-down.svg") right 13px center no-repeat var(--main-grey);
+  background: url("../images/arrow-down.svg") right 13px center no-repeat
+    var(--main-grey);
   transition: background 0.3s ease;
 }
 
@@ -708,12 +746,12 @@ ul {
   display: block;
   position: relative;
   width: 150px;
-  padding: 8px 40px 8px 40px;
-  margin-right: 11px;
+  padding: 9px 40px 9px 40px;
+  margin-right: var(--sub-input-mr);
   border: 1px solid var(--radio-border);
   border-radius: 8px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: var(--main-fz);
   user-select: none;
 }
 

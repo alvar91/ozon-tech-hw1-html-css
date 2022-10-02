@@ -241,6 +241,7 @@
                 <input
                   type="text"
                   class="card__input"
+                  name="surname"
                   value="Константиновский"
                   placeholder="Фамилия"
                 />
@@ -251,6 +252,7 @@
                 <input
                   type="text"
                   class="card__input"
+                  name="name"
                   value="Константин"
                   placeholder="Имя"
                 />
@@ -258,7 +260,7 @@
               <label class="card__field">
                 <span class="card__title">Отчество</span>
 
-                <input type="text" class="card__input" value="Игоревич" placeholder="Отчество" />
+                <input type="text" class="card__input" name="patronymic" value="Игоревич" placeholder="Отчество" />
               </label>
 
               <label class="card__field">
@@ -267,11 +269,12 @@
                 <input
                   type="date"
                   class="card__input card__input--date"
+                  name="date"
                   value="1998-02-09"
                   min="1900-01-01"
                 />
               </label>
-              <div class="card__field">
+              <label class="card__field">
                 <span class="card__title">Гражданство</span>
                 <select class="card__select card__select--arrow" name="citizenship">
                   <option value="rf" selected>Российская Федерация</option>
@@ -279,7 +282,7 @@
                   <option value="bl">Беларусь</option>
                   <option value="kz">Казахстан</option>
                 </select>
-              </div>
+              </label>
               <span class="card__field">
                 <span class="card__title">Пол</span>
 
@@ -311,6 +314,7 @@
                 <input
                   type="text"
                   class="card__input card__input--wide"
+                  name="city"
                   value="Санкт-Петербург"
                   placeholder="Город проживания"
                   disabled
