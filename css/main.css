@@ -78,7 +78,7 @@ html {
 
 *:focus {
   outline: 2px solid var(--main-blue);
-  transition: outline 0.1s ease;
+  transition: outline 0.2s ease;
 }
 
 body {
@@ -208,7 +208,7 @@ ul {
   border-bottom: 2px solid var(--main-blue);
   border-radius: 4px;
   transform: scaleX(0) translateY(9px);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .nav__link--active {
@@ -296,12 +296,12 @@ ul {
   padding: var(--main-vertical) var(--main-horizontal);
   border-bottom: 1px solid var(--border-dark);
   background-color: var(--main-light);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .aside__item:hover {
   background-color: var(--main-grey);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .aside__item:last-child {
@@ -655,7 +655,7 @@ ul {
   font-size: var(--main-fz);
   line-height: 16px;
   color: var(--text-color);
-  transition: outline 0.1s ease;
+  transition: outline 0.2s ease;
   appearance: none;
 }
 
@@ -713,20 +713,20 @@ ul {
   font-size: var(--main-fz);
   line-height: 16px;
   color: var(--text-color);
-  transition: outline 0.1s ease;
+  transition: outline 0.2s ease;
   appearance: none;
 }
 
 .card__select--arrow {
   background: url("../images/arrow.svg") right 13px center no-repeat
     var(--main-grey);
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
 }
 
 .card__select--arrow:focus {
   background: url("../images/arrow-down.svg") right 13px center no-repeat
     var(--main-grey);
-  transition: background 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 1440px) {
@@ -779,7 +779,7 @@ ul {
 .card__radio input:checked ~ .card__checkmark {
   border: none;
   background-color: var(--main-blue);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .card__checkmark:after {
@@ -790,7 +790,7 @@ ul {
 
 .card__radio input:checked ~ .card__checkmark:after {
   display: block;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .card__radio .card__checkmark:after {
